@@ -46,3 +46,13 @@ Le gradient est alors la derive de la fonction cout .NB : L'algorithme de la des
 # 03-07-2026
 # La vectorisation
 Cela consiste a mettre nos donnees dans les vecteurs des matrices ou des tableaux a N-dimension afin d'effectuer des operations  mathematique sur l'ensemble de ces donnees.Etant donnee que en machine learning on travaille sur de grosse quantite de donnes , sans la vectorisation on devrais travailler avec les iteration ce qui a un enjeux tres important sur la memoire.La vectorisation nous permet de gagner du temps memoire.
+# La Normalisation 
+C'est le fait de mettre tous les variables sur une meme echelle ,cela permet a la fonction cout d'evoluer de facon similaire sur tous ses parametres ce qui garantir un bonne convergence de l'algoritheme de Descente de Gradients.Mais si une variable est plus importante que l'autre (voir evolue 5 fois plus vite) alors la fonction de cout est compressee  car w2 a un grand impact sur la sortie A(Z).Cela complique la ocnvergence de la Descente de Gradients.
+# Normalisation MinMax:
+Mettre toutes nos variables dans la même échelle de valeurs, généralement entre 0 et 1.Cela permet d'éviter que certaines caractéristiques dominent le processus d'apprentissage en raison de leur échelle plus grande.
+# Le Overfithing
+C'est le fait pour un modele au lieu de generaliser l'apprentissage se met juste a memoriser.Cela se caracterise par de bonne performence au niveua des donnees du train mais des performance tres mauvaise au niveau des donnees test.Pour pallier a ce probleme , on dois : Fournir plus de donnees a la machine lors de l'entrenement pour garantir une etude appronfondir des caracteristique des object present dans le dataset train.
+Lorsque on a un grand decallage entre le nombre de photos et le nombre de variable , on obtient un  phenomene appeler le fleaux de la dimension qui fait que l'espace dans lequel se trouve nos donnees est un espace principalement remplir de vide dans lequel le model peut se balader comme il veut et trouver la configuration qu'il veut et obtenir un bon score sur le train au detriment sur le test.
+# NB 
+Le fléau de la dimension (en anglais Curse of Dimensionality) est l'un des concepts les plus importants en Machine Learning, Data Science et Intelligence Artificielle. Il désigne l'ensemble des problèmes qui apparaissent lorsque le nombre de variables (dimensions ou features) d'un jeu de données devient très élevé.Avec peu d'observations et beaucoup de variables, les exemples sont très éloignés les uns des autres.
+Le modèle dispose donc de peu d'informations locales pour apprendre.Lorsque le nombre de variables dépasse largement le nombre d'exemples, le modèle peut apprendre les particularités du jeu d'entraînement au lieu des relations générales.
