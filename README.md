@@ -56,3 +56,15 @@ Lorsque on a un grand decallage entre le nombre de photos et le nombre de variab
 # NB 
 Le fléau de la dimension (en anglais Curse of Dimensionality) est l'un des concepts les plus importants en Machine Learning, Data Science et Intelligence Artificielle. Il désigne l'ensemble des problèmes qui apparaissent lorsque le nombre de variables (dimensions ou features) d'un jeu de données devient très élevé.Avec peu d'observations et beaucoup de variables, les exemples sont très éloignés les uns des autres.
 Le modèle dispose donc de peu d'informations locales pour apprendre.Lorsque le nombre de variables dépasse largement le nombre d'exemples, le modèle peut apprendre les particularités du jeu d'entraînement au lieu des relations générales.
+
+# Reseaux de neurones convolutionnel
+Dans une couche , on peut ajouter autant de neurones possible,etant donner que chaque neurone a ces parametres,leurs fonctionnemet serais donc independant des un des autres ce qui fait que plus on a des neuronnes plus le model est performent mais aussi lent pour entrainer.
+1. On note Wij le parametre associe au neurone i et provenant de l'entree j 
+2. On note [c] le numero de la couche C sur laquelle on travaille :Z[1],Z[2]...
+3. Pour calculer les valeurs z d'une couche [c] on utilise les activations a de la couche [c-1]
+Z1[2]=W11[2]a1[1]+W12[2]a2[1]+b[2]
+
+# Back propagation 
+Consiste a retracer comment la fonction Cout evolue de la derniere couche du reseau jusqu'a la toute premiere.
+
+# Broadcasting
