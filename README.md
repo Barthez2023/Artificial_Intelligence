@@ -43,3 +43,6 @@ Est une fonction aui permet de quantifier les erreurs effectues par un modele.No
 consiste a ajuster les parametres W et b de facon a minimiser les erreurs du  modele c'est a dire a minimiser la fonction cout (Log Loss).Pour cela on dois voir comment cette fonction varie en fonction des differents parametres.
 Le gradient est alors la derive de la fonction cout .NB : L'algorithme de la descente de gradient n'est applicable que sur des fonction convexe qui ne contient qu'un suel minimum
 
+# 03-07-2026
+# La vectorisation
+Cela consiste a mettre nos donnees dans les vecteurs des matrices ou des tableaux a N-dimension afin d'effectuer des operations  mathematique sur l'ensemble de ces donnees.Etant donnee que en machine learning on travaille sur de grosse quantite de donnes , sans la vectorisation on devrais travailler avec les iteration ce qui a un enjeux tres important sur la memoire.La vectorisation nous permet de gagner du temps memoire.
