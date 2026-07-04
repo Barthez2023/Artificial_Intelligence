@@ -67,4 +67,8 @@ Z1[2]=W11[2]a1[1]+W12[2]a2[1]+b[2]
 # Back propagation 
 Consiste a retracer comment la fonction Cout evolue de la derniere couche du reseau jusqu'a la toute premiere.
 
+# Not :
+Il est toujours important lorsque l'on travaille avec les images de verifier si les dimension des images test sont les memes que les dimensions des donnees train.
+
 # Broadcasting
+est un mécanisme de NumPy qui permet d'effectuer des opérations entre des tableaux (ndarray) de tailles différentes, sans avoir à les redimensionner manuellement.
