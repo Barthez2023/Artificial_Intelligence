@@ -72,3 +72,5 @@ Il est toujours important lorsque l'on travaille avec les images de verifier si 
 
 # Broadcasting
 est un mécanisme de NumPy qui permet d'effectuer des opérations entre des tableaux (ndarray) de tailles différentes, sans avoir à les redimensionner manuellement.
+
+Plus le nombre de couche augmente dans le reseaux ,meilleur est sa performance.La performance de notre modele n'augmente pas en depit de la profondeur du reseaux de neurone car plus le reseaux de neurones est profond , plus celui si a des chance de ce perdre dans son apprentissage.En Deep Learning il s'agit d'un probleme appler le VANISHING GRADIENTS ou EXPLODING GRADIENTS
